@@ -6,7 +6,7 @@
     android:layout_margin="8dp">
 
     <Button
-        android:id="@+id/tvCategoryName"
+        android:id="@+id/btnCategoryName"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:backgroundTint="@color/black"
