@@ -53,8 +53,8 @@ dependencies {
     // Retrofit
     implementation "com.squareup.retrofit2:retrofit:2.9.0"
     // Picasso
-    implementation "com.squareup.picasso:picasso:2.71828"
-    // Corrutinas
+    implementation 'com.squareup.picasso:picasso:2.8'
+    // Coroutines
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0"
     // Converter JSON
@@ -62,9 +62,6 @@ dependencies {
     // DaggerHilt
     implementation "com.google.dagger:hilt-android:2.44"
     kapt "com.google.dagger:hilt-compiler:2.44"
-    // Room
-    implementation "androidx.room:room-ktx:2.4.0"
-    kapt "androidx.room:room-compiler:2.4.0"
 
     //Mockk
     testImplementation 'io.mockk:mockk:1.12.2'

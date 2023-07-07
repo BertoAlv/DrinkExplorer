@@ -6,7 +6,7 @@ import javax.inject.Inject
 
 class GetThumbnailsUseCase @Inject constructor(private val repository: CocktailRepository) {
 
-    suspend operator fun invoke() : DrinkThumbnail? = repository.getCocktailsThumbnails()
+    suspend operator fun invoke(category : String) : DrinkThumbnail? = repository.getCocktailsThumbnails(category)
 
 
 }

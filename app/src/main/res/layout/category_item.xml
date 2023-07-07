@@ -7,14 +7,15 @@
 
     <Button
         android:id="@+id/btnCategoryName"
+        android:text="Cocktail"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:backgroundTint="@color/black"
-        android:fontFamily="@font/ysabeau_italic"
+        android:backgroundTint="@color/light_blue"
+        android:fontFamily="@font/bebas_regular"
         android:gravity="center"
         android:textColor="@color/white"
         android:textSize="38sp"
-        android:textStyle="bold|italic"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

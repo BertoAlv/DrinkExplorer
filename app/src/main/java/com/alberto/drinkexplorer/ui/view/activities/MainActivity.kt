@@ -37,10 +37,6 @@ class MainActivity () : BaseCocktailActivity() {
             binding.tvTitle.isVisible = it
         }
 
-        viewModel.navigateThumbnails.observe(this){
-            navigateToThumbnails()
-        }
-
     }
 
     private fun initRecyclerView() {
@@ -51,13 +47,13 @@ class MainActivity () : BaseCocktailActivity() {
     }
 
     private fun onItemSelected(category : CategoryResponse){
-        viewModel.onCategoryClicked()
+        navigateToThumbnails(category.name)
     }
 
-    private fun navigateToThumbnails() {
+    private fun navigateToThumbnails(category: String) {
         val intent = Intent(this, ThumbnailsActivity::class.java)
+        intent.putExtra("CATEGORY",category)
         startActivity(intent)
     }
-
 
 }
