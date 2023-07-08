@@ -3,6 +3,7 @@ package com.alberto.drinkexplorer.ui.view.activities
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.core.view.isVisible
 import com.alberto.drinkexplorer.R
 import com.alberto.drinkexplorer.data.model.Drink
 import com.alberto.drinkexplorer.databinding.ActivityDrinkInfoBinding
@@ -24,6 +25,10 @@ class DrinkInfoActivity : BaseCocktailActivity() {
         if (drink != null) {
             Log.d("Comprobacion","Drink contiene valor $drink")
             viewModel.onGoingDetail(drink)
+        }
+
+        viewModel.isLoading.observe(this){
+            binding.progress.isVisible = it
         }
 
         initView()

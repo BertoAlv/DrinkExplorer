@@ -5,12 +5,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="8dp">
 
-    <Button
-        android:id="@+id/btnCategoryName"
+    <TextView
+        android:id="@+id/tvCategoryName"
         android:text="Cocktail"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:backgroundTint="@color/light_blue"
+        android:background="@color/light_blue"
         android:fontFamily="@font/bebas_regular"
         android:gravity="center"
         android:textColor="@color/white"

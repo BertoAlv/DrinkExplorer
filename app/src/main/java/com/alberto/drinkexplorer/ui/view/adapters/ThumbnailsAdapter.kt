@@ -23,8 +23,4 @@ class ThumbnailsAdapter(private var thumbnails : List<DrinkBasic>, private val o
 
     override fun getItemCount(): Int = thumbnails.size
 
-    fun updateData(newThumbnails: List<DrinkBasic>) {
-        thumbnails = newThumbnails
-        notifyDataSetChanged()
-    }
 }

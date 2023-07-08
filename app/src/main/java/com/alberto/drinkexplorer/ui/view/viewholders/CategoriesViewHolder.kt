@@ -15,8 +15,8 @@ class CategoriesViewHolder (view : View) : RecyclerView.ViewHolder(view) {
     private val binding = CategoryItemBinding.bind(view)
 
     fun bind(category : CategoryResponse, onClickListener : (CategoryResponse) -> Unit){
-        binding.btnCategoryName.text = category.name
-        binding.btnCategoryName.setOnClickListener {
+        binding.tvCategoryName.text = category.name
+        binding.tvCategoryName.setOnClickListener {
             onClickListener(category)
         }
     }
