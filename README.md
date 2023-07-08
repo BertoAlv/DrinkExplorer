@@ -21,6 +21,11 @@ The app incorporates popular libraries like Retrofit2, Picasso, LiveData, Corout
   <li>Android device or emulator running Android 7.0 (API level 24) or above.</li>
 </ul>
 
+## Installation
 
-
-
+<ol>
+  <li>Clone the repository: git clone https://github.com/BertoAlv/Drink_Explorer.git</li>
+  <li>Open the project in Android Studio.</li>
+  <li>Build the project using the Gradle build system.</li>
+  <li>Run the app on your Android device or emulator.</li>
+</ol>
