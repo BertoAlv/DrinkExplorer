@@ -50,11 +50,12 @@ class CocktailViewModel @Inject constructor(private val getCategories : GetCateg
 
     fun onGoingDetail(drink : String){
         viewModelScope.launch {
+            isLoading.postValue(true)
             val response = getDrinkDetails(drink)
             if (response != null) {
-                Log.d("CompDetail","Objeto drink no nulo - ${response.drinks[0].name}")
                 drinkInformation.postValue(response.drinks[0])
             }
+            isLoading.postValue(false)
         }
     }
 

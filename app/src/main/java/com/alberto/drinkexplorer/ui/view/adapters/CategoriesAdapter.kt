@@ -23,8 +23,4 @@ class CategoriesAdapter(private var categories : List<CategoryResponse>, private
 
     override fun getItemCount(): Int = categories.size
 
-    fun updateData(newCategories : List<CategoryResponse>){
-        categories = newCategories
-        notifyDataSetChanged()
-    }
 }
