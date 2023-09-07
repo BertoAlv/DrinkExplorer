@@ -16,6 +16,9 @@
         android:theme="@style/Theme.DrinkExplorer"
         tools:targetApi="31">
         <activity
+            android:name=".ui.view.activities.DrinkInstructions"
+            android:exported="false" />
+        <activity
             android:name=".ui.view.activities.DrinkInfoActivity"
             android:exported="false" />
         <activity

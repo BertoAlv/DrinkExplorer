@@ -15,7 +15,7 @@ class ThumbnailsViewHolder(view : View) : RecyclerView.ViewHolder(view) {
     private val binding = ThumbnailItemBinding.bind(view)
 
     fun bind(drink : DrinkBasic, onClickListener : (DrinkBasic) -> Unit){
-        binding.tvDrinkName.text = drink.name
+        binding.tvDrinkNameThumb.text = drink.name
         Picasso.get().load(drink.image).into(binding.ivThumbnail)
         itemView.setOnClickListener {
             onClickListener(drink)

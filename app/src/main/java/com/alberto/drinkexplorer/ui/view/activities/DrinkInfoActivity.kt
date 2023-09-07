@@ -1,5 +1,6 @@
 package com.alberto.drinkexplorer.ui.view.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -20,6 +21,8 @@ class DrinkInfoActivity : BaseCocktailActivity() {
         binding = ActivityDrinkInfoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        var instructions = ""
+
         var drink = intent.extras?.getString("DRINK")
         if (drink != null) {
             Log.d("Comprobacion","Drink contiene valor $drink")
@@ -27,6 +30,14 @@ class DrinkInfoActivity : BaseCocktailActivity() {
         }
 
         initView()
+
+        binding.btnBack.setOnClickListener {
+            finish()
+        }
+
+        binding.btnInstructions.setOnClickListener {
+            goToInstructions(instructions)
+        }
     }
 
     private fun initView() {
@@ -35,7 +46,9 @@ class DrinkInfoActivity : BaseCocktailActivity() {
             binding.tvDrinkName.text = drink.name
             Picasso.get().load(drink.image).into(binding.ivDrinkImage)
             binding.tvGlass.text = drink.glass
-            binding.tvInstructions.text = drink.instructions
+            binding.btnInstructions.setOnClickListener {
+                goToInstructions(drink.instructions)
+            }
             val ingredients = mutableListOf<String>()
             for (i in 1..9) {
                 val ingredient = drink.getIngredient(i)
@@ -46,13 +59,14 @@ class DrinkInfoActivity : BaseCocktailActivity() {
             val ingredientList = ingredients.mapIndexedNotNull { index, ingredient ->
                 val measure = drink.getMeasure(index + 1)
                 if (measure != null) {
-                    "$measure - $ingredient"
+                    "$ingredient :\t $measure"
                 } else {
                     null
                 }
             }
             binding.tvIngredients.text = ingredientList.joinToString("\n")
         }
+
     }
 
     fun Drink.getIngredient(index: Int): String? {
@@ -87,5 +101,11 @@ class DrinkInfoActivity : BaseCocktailActivity() {
 
     override fun onBackPressed() {
         finish()
+    }
+
+    private fun goToInstructions(instructions : String) {
+        val intent = Intent(this, DrinkInstructions::class.java )
+        intent.putExtra("INSTRUCTIONS",instructions)
+        startActivity(intent)
     }
 }
