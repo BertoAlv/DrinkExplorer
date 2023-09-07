@@ -22,7 +22,7 @@ class DrinkInstructions : AppCompatActivity() {
 
         val parts = instructions?.split(".") ?: emptyList()
 
-        val instructionsSize = parts.size
+        val instructionsSize = if (parts?.size == 1) 1 else parts?.size
 
         for (part in parts){
             part.trim()
@@ -30,6 +30,11 @@ class DrinkInstructions : AppCompatActivity() {
 
         binding.tvInstructionNumber.text = (i+1).toString()
         binding.tvInstructions.text = parts[i]
+
+        if (instructionsSize <= 2){
+            binding.btnInstructionsFwd.visibility = View.GONE
+            binding.btnDone.isVisible = true
+        }
 
         binding.btnInstructionsFwd.setOnClickListener {
             i++
