@@ -30,10 +30,6 @@ class DrinkInfoActivity : BaseCocktailActivity() {
             viewModel.onGoingDetail(drink)
         }
 
-        viewModel.isLoading.observe(this){
-            binding.progress.isVisible = it
-        }
-
         initView()
 
         binding.btnBack.setOnClickListener {
