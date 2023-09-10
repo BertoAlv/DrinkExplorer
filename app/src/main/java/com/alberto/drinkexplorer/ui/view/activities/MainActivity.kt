@@ -1,21 +1,12 @@
 package com.alberto.drinkexplorer.ui.view.activities
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.MotionEvent
-import android.view.View
-import android.widget.Toast
-import androidx.activity.viewModels
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.alberto.drinkexplorer.data.model.CategoryResponse
 import com.alberto.drinkexplorer.databinding.ActivityMainBinding
 import com.alberto.drinkexplorer.ui.view.adapters.CategoriesAdapter
-import com.alberto.drinkexplorer.ui.view.adapters.ThumbnailsAdapter
-import com.alberto.drinkexplorer.ui.viewmodel.CocktailViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

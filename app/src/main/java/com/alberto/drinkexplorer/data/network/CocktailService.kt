@@ -1,6 +1,5 @@
 package com.alberto.drinkexplorer.data.network
 
-import com.alberto.drinkexplorer.data.model.Drink
 import com.alberto.drinkexplorer.data.model.DrinkCategories
 import com.alberto.drinkexplorer.data.model.DrinkInfo
 import com.alberto.drinkexplorer.data.model.DrinkThumbnail

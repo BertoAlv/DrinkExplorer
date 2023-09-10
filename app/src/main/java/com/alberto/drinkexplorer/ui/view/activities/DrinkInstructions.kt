@@ -2,7 +2,6 @@ package com.alberto.drinkexplorer.ui.view.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.core.view.isVisible
 import com.alberto.drinkexplorer.databinding.ActivityDrinkInstructionsBinding

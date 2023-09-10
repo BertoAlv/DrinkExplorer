@@ -4,9 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.alberto.drinkexplorer.R
-import com.alberto.drinkexplorer.data.model.CategoryResponse
 import com.alberto.drinkexplorer.data.model.DrinkBasic
-import com.alberto.drinkexplorer.ui.view.viewholders.CategoriesViewHolder
 import com.alberto.drinkexplorer.ui.view.viewholders.ThumbnailsViewHolder
 
 class ThumbnailsAdapter(private var thumbnails : List<DrinkBasic>, private val onClickListener : (DrinkBasic) -> Unit) : RecyclerView.Adapter<ThumbnailsViewHolder>() {

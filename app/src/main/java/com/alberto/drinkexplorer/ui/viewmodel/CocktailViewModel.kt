@@ -1,19 +1,14 @@
 package com.alberto.drinkexplorer.ui.viewmodel
 
-import android.content.Intent
-import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.alberto.drinkexplorer.data.model.CategoryResponse
 import com.alberto.drinkexplorer.data.model.Drink
 import com.alberto.drinkexplorer.data.model.DrinkBasic
-import com.alberto.drinkexplorer.data.model.DrinkInfo
-import com.alberto.drinkexplorer.data.model.DrinkThumbnail
 import com.alberto.drinkexplorer.domain.GetCategoriesUseCase
 import com.alberto.drinkexplorer.domain.GetDrinkDetailsUseCase
 import com.alberto.drinkexplorer.domain.GetThumbnailsUseCase
-import com.alberto.drinkexplorer.ui.view.activities.ThumbnailsActivity
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

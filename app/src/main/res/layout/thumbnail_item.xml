@@ -21,10 +21,12 @@
 
         <TextView
             android:id="@+id/tvDrinkNameThumb"
-            android:background="@color/light_purple"
+            android:background="@color/dark_purple"
+            android:textColor="@color/white"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:paddingHorizontal="4dp"
+            android:fontFamily="@font/fugazone_regular"
             android:gravity="center"
             android:textSize="14sp"
             android:textStyle="bold"

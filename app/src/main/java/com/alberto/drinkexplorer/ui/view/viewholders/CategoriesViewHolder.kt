@@ -1,15 +1,12 @@
 package com.alberto.drinkexplorer.ui.view.viewholders
 
 
-import android.media.Image
 import android.view.View
 import androidx.annotation.DrawableRes
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.alberto.drinkexplorer.R
 import com.alberto.drinkexplorer.data.model.CategoryResponse
 import com.alberto.drinkexplorer.databinding.CategoryItemBinding
-import com.alberto.drinkexplorer.ui.view.activities.MainActivity
 
 class CategoriesViewHolder (view : View) : RecyclerView.ViewHolder(view) {
 

@@ -2,12 +2,10 @@ package com.alberto.drinkexplorer.ui.view.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.AdapterView.OnItemClickListener
 import androidx.recyclerview.widget.RecyclerView
 import com.alberto.drinkexplorer.R
 import com.alberto.drinkexplorer.data.model.CategoryResponse
 import com.alberto.drinkexplorer.ui.view.viewholders.CategoriesViewHolder
-import javax.inject.Inject
 
 class CategoriesAdapter(private var categories : List<CategoryResponse>, private val onClickListener : (CategoryResponse) -> Unit) : RecyclerView.Adapter<CategoriesViewHolder>() {
 

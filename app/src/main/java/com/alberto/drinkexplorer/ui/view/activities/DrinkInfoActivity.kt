@@ -1,11 +1,8 @@
 package com.alberto.drinkexplorer.ui.view.activities
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import androidx.core.view.isVisible
-import com.alberto.drinkexplorer.R
 import com.alberto.drinkexplorer.data.model.Drink
 import com.alberto.drinkexplorer.databinding.ActivityDrinkInfoBinding
 import com.squareup.picasso.Picasso
