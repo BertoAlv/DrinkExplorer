@@ -3,7 +3,7 @@
 This modern Android application is designed to fetch data from <a href="https://www.thecocktaildb.com/api.php"> TheCocktailDB </a> API. and provide users with a rich collection of cocktail information.
 It is written in Kotlin and follows best practices such as MVVM architecture and clean architecture principles. 
 The app incorporates popular libraries like Retrofit2, Picasso, LiveData, Coroutines, and Dagger Hilt for seamless functionality and efficient dependency injection.
-</br>
+
 ## Features
 
 <ul>
@@ -23,9 +23,4 @@ The app incorporates popular libraries like Retrofit2, Picasso, LiveData, Corout
 
 ## Installation
 
-<ol>
-  <li>Clone the repository: git clone https://github.com/BertoAlv/Drink_Explorer.git</li>
-  <li>Open the project in Android Studio.</li>
-  <li>Build the project using the Gradle build system.</li>
-  <li>Run the app on your Android device or emulator.</li>
-</ol>
+You can download the app from the Google PlayStore here: <a href="https://play.google.com/store/apps/details?id=com.alberto.drinkexplorer&pcampaignid=web_share"> Drink Explorer </a>
